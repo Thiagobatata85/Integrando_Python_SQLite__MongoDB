@@ -55,19 +55,6 @@ Base.metadata.create_all(engine)
 #Faz a persistencia as Informações no Banco de Dados SQlite
 
 with Session(engine) as session:
-    thiago = Client(name="Thiago Mateus",
-                    cpf="360.235.656.65",
-                    address=" Rua 24 de Abril, 61"
-                    )
-
-    poli = Client(name="Poliana Brezolin",
-                    cpf="365.653.654.35",
-                    address=" Rua 23 de Março, 123"
-                    )
-    pietro = Client(name=" Pietro Santos",
-                    cpf="654.653.895.65",
-                    address=" Rua 12,56"
-                    )
 
     account1=Account(client_id="1",
                      tipo="cc",
